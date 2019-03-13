@@ -131,7 +131,7 @@ class OrderService {
             {
                 return $result->result[0];
             }else{
-                $result = SOSSData::Insert ("profile", $Transaction,$tenantId = null);
+                $result = SOSSData::Insert ("profile", $profile,$tenantId = null);
                 if($result->success){
                     $profile->id = $result->result->generatedId;
                 }

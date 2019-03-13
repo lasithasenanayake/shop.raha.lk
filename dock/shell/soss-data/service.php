@@ -46,7 +46,7 @@ class SearchServices {
                         CacheData::setObjects(md5($s->search),$s->storename,$result->result);
                     }
                 }else{
-                    $f->{$s->storename}=null;
+                    $f->{$s->storename}=$result;
                 }
             }else{
                 $f->{$s->storename}= $result;
